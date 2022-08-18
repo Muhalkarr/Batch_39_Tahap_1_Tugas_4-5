@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title>Proyek yang dibuat</title>
+    <link rel="stylesheet" href="assets/style/blog.css" />
+    <link rel="stylesheet" href="assets/style/nav.css">
+    <link rel="icon" type="image/icon" href="assets/icon/globe.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-left">
+          <img src="assets/icon/globe.png" style="width: 50px;" alt="logo Asia Tenggara">
+          <ul>
+              <li>
+                  <a href="index.html"  style="font-weight: bold" >Beranda</a>
+              </li>
+              <li>
+                  <a href="blog.html" style="font-weight: bold" >Proyek saya</a>
+              </li>
+          </ul>
+      </div>
+      <div class="nav-right">
+          <a href="contact.html">Kontaknya</a>
+      </div>
+  </nav>
+
+  <div class="isi-form">
+    <h1 class="add-my-project" >ADD MY PROJECT</h1>
+    <form onsubmit="submitProject(event)">
+      <div class="name">
+        <label for="input-name">Project Name</label>
+        <input class="nama" id="input-name" type="input-name" />
+      </div>
+      <div class="Date">
+        <div class="start-date" style="margin-right: 30px;" >
+          <label for="input-date" >Start Date</label>
+          <input class="tanggal" id="input-start-date" type="date" />
+        </div>
+
+        <div class="end-date">
+          <label for="input-date">End Date</label>
+          <input class="tanggal" id="input-end-date" type="date" />
+        </div>
+      </div>
+
+      <div>
+        <label for="input-message">Description</label>
+        <textarea class="pesan" name="pesan" id="input-message" cols="30" rows="10" style="resize: none"></textarea>
+      </div>
+
+      <div>
+        <label for="checkbox">Technologies</label>
+        <div class="checkbox-technologies">
+          <div class="checkbox-kiri" >
+            <div>
+              <input value="fa-node-js" type="checkbox" id="inputNode">
+              <label class="fontTech" for="inputNode"> Node JS </label>
+            </div>
+            <div>
+              <input value="fa-react" type="checkbox" id="inputReact">
+              <label class="fontTech" for="inputReact" > React JS </label>
+            </div>
+          </div>
+          <div class="checkbox-kanan">
+            <div>
+              <input value="fa-java" type="checkbox" id="inputNext">
+              <label class="fontTech" for="inputNext"> Next JS </label>
+            </div>
+            <div>
+              <input value="fa-square-js" type="checkbox" id="inputTS">
+              <label class="fontTech" for="inputTS"> TypeScript </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <label>Upload Image</label>
+        <div class="input-blog-image-group">
+          <label for="input-blog-image">
+
+            <img class="attach-icon" src="assets/icon/file.png" alt="file" />
+          </label>
+          <input type="file" id="input-blog-image" hidden />
+        </div>
+      </div>
+
+      <div class="button">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+    <div class="isi-konten">
+      <hr class="line" />
+    <h1 class="judul-my-project" >MY PROJECT</h1>
+    <div id="contents" class="blog-list">
+      <div class="blog-list-item">
+        <div>
+          <img class="blog-image" src="assets/image/cyber-attack.jpg" alt="gambar maya" />
+        </div>
+        <div class="blog-content">
+          <div class="judul-blog">
+            <a class="judul-pasar-coding" href="blog-detail.html" target="_blank"
+              >Ontario Cannabis Store dealing with cyber attacks
+            </a>
+          </div>
+          <div class="detail-blog-content">
+            Durasi : 4 Bulan
+          </div>
+          <p>One of the country’s biggest manufacturers of recreational vehicles is still struggling with the aftereffects of a cyber attack
+            Quebec-based BRP Inc., better known as Bombardier Recreational Products, said Monday it had been hit by “malicious cybersecurity activity.”
+            This morning Biliana Necheva, the company’s senior media relations advisor, said it won’t give interviews with more details “until the situation is resolved.”
+          </p>
+        </div>
+        <div class="logo-blog">
+          <i class="fa-brands fa-react"></i>
+          <i class="fa-brands fa-node-js"></i>
+          <i class="fa-brands fa-square-js"></i>
+          <i class="fa-brands fa-java"></i>
+        </div>
+        <div style="text-align: right; margin-top: 15px">
+          <span style="font-size: 12px; color:grey">beberapa saat yang lalu</span>
+        </div>
+        <div class="btn-group">
+          <button class="btn-edit">Edit Post</button>
+          <button class="btn-post">Delete Blog</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>

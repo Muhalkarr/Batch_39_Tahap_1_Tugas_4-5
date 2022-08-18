@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: rgb(218, 218, 218);
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.598);
+    display: flex;
+    width: 85%; 
+    height: 65%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgb(68, 68, 68);
+}
+
+.section-left{
+    flex: 50%;
+    margin-top: 50px;
+}
+
+.kontena {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+}
+
+.kontena h2 {
+    text-align: center;
+}
+
+.kontena p {
+    text-align: justify;
+}
+
+.kontena div {
+    margin-top: 50px
+}
+
+.tombol-kontak{
+    margin-right: 20px;
+}
+
+.tombol-kontak a {
+    font-size: medium;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgb(50, 56, 121);
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.tombol-cv {
+    text-decoration:none
+}
+
+.section-right{
+    flex: 50%;
+    margin-top: 50px;
+    display: flex;
+    justify-items: end;
+}
+
+.section-right div {
+    border: none;
+    width: 340px;
+    height: 450px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgb(68, 68, 68);
+}
+
+.section-right img {
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    width: 100%;
+}
+
+.section-right h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-right div p {
+    text-align: center;
+}
+
+.tabel-icon-sosmed {
+    margin-top: 50px; 
+}

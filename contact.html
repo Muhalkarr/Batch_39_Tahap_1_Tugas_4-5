@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Kontak Formulir</title>
+    <link rel="stylesheet" href="assets/style/contact.css">
+    <link rel="stylesheet" href="assets/style/nav.css">
+    <link rel="icon" type="image/icon" href="assets/icon/globe.png">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="assets/icon/globe.png" style="width: 50px;" alt="logo Asia Tenggara">
+            <ul>
+                <li>
+                    <a href="index.html"  style="font-weight: bold" >Beranda</a>
+                </li>
+                <li>
+                    <a href="blog.html" style="font-weight: bold" >Proyek saya</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html">Kontaknya</a>
+        </div>
+    </nav>
+    <div class="halaman-utama">
+        <form>
+            <div>
+                <h1>GET IN TOUCH</h1>
+            </div>
+            <div>
+                <label for="input-name">Nama</label>
+                <input id="input-name" type="text" placeholder="Isi Namanya">
+            </div>
+            <div>
+                <label for="input-email">Email</label>
+                <input id="input-email" type="email" placeholder="Isi Emailnya">
+            </div>
+            <div>
+                <label for="input-phone">Nomer Ponsel</label>
+                <input id="input-phone" type="number" placeholder="Isi nomor ponselnya">
+            </div>
+            <div>
+                <label for="input-subject">Subjek</label>
+                <select id="input-subject">
+                    <option value="" disabled selected>Silahkan dipilih</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Fullstack">Fullstack</option>
+                </select>
+            </div>
+            <div>
+                <label for="input-message">Pesanmu</label>
+                <textarea id="input-message" rows="15" style="resize:none"
+                    placeholder="Apa pesanmu Baginda?"></textarea>
+            </div>
+            <button type="button" onclick="submitData()">Submit</button>
+        </form>
+        <script src="assets/js/form.js"></script>
+    </div>
+</body>
+</html>
